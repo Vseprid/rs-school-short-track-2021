@@ -9,7 +9,7 @@
  *
  */
 function getEmailDomain(email) {
-  return email.match(/[^@]*$/);
+  return email.match(/[^@]*$/g).join('');
 }
 
 module.exports = getEmailDomain;
